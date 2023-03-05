@@ -1,11 +1,7 @@
-//generate similar code for swipedown function
-
 import 'package:demo/demo.dart';
 import 'package:test/test.dart';
 
-void main() {
-  group('swipeUpFunction', () {
-    var matrix = [
+var matrix = [
       ['A', 'B', 'C', 'D', 'E', 'F', 'G'],
       ['H', 'I', 'J', 'K', 'L', 'M', 'N'],
       ['O', 'P', 'Q', 'R', 'S', 'T', 'U'],
@@ -15,6 +11,9 @@ void main() {
       ['AQ', 'AR', 'AS', 'AT', 'AU', 'AV', 'AW'],
     ];
 
+void main() {
+  group('swipeUpFunction', () {
+    
     for (var col = 0; col < matrix[0].length; col++) {
       test('swipe up column $col', () {
         var expectedMatrix = List.generate(matrix.length, (row) {
@@ -35,15 +34,6 @@ void main() {
   });
 
 group('swipeDownFunction', () {
-    var matrix = [      ['A', 'B', 'C', 'D', 'E', 'F', 'G'],
-      ['H', 'I', 'J', 'K', 'L', 'M', 'N'],
-      ['O', 'P', 'Q', 'R', 'S', 'T', 'U'],
-      ['V', 'W', 'X', 'Y', 'Z', 'AA', 'AB'],
-      ['AC', 'AD', 'AE', 'AF', 'AG', 'AH', 'AI'],
-      ['AJ', 'AK', 'AL', 'AM', 'AN', 'AO', 'AP'],
-      ['AQ', 'AR', 'AS', 'AT', 'AU', 'AV', 'AW'],
-    ];
-
     for (var col = 0; col < matrix[0].length; col++) {
       test('swipe down column $col', () {
         var expectedMatrix = List.generate(matrix.length, (row) {
@@ -64,15 +54,6 @@ group('swipeDownFunction', () {
   });
 
 group('swipeLeftFunction', () {
-    var matrix = [      ['A', 'B', 'C', 'D', 'E', 'F', 'G'],
-      ['H', 'I', 'J', 'K', 'L', 'M', 'N'],
-      ['O', 'P', 'Q', 'R', 'S', 'T', 'U'],
-      ['V', 'W', 'X', 'Y', 'Z', 'AA', 'AB'],
-      ['AC', 'AD', 'AE', 'AF', 'AG', 'AH', 'AI'],
-      ['AJ', 'AK', 'AL', 'AM', 'AN', 'AO', 'AP'],
-      ['AQ', 'AR', 'AS', 'AT', 'AU', 'AV', 'AW'],
-    ];
-
     for (var row = 0; row < matrix.length; row++) {
       test('swipe left row $row', () {
         var expectedMatrix = List.generate(matrix.length, (i) {
@@ -91,15 +72,6 @@ group('swipeLeftFunction', () {
   });
  
 group('swipeRightFunction', () {
-    var matrix = [      ['A', 'B', 'C', 'D', 'E', 'F', 'G'],
-      ['H', 'I', 'J', 'K', 'L', 'M', 'N'],
-      ['O', 'P', 'Q', 'R', 'S', 'T', 'U'],
-      ['V', 'W', 'X', 'Y', 'Z', 'AA', 'AB'],
-      ['AC', 'AD', 'AE', 'AF', 'AG', 'AH', 'AI'],
-      ['AJ', 'AK', 'AL', 'AM', 'AN', 'AO', 'AP'],
-      ['AQ', 'AR', 'AS', 'AT', 'AU', 'AV', 'AW'],
-    ];
-
     for (var row = 0; row < matrix.length; row++) {
       test('swipe right row $row', () {
         var expectedMatrix = List.generate(matrix.length, (i) {
